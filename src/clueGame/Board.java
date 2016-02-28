@@ -127,4 +127,20 @@ public class Board {
 	public int getNumColumns() {
 		return numColumns;
 	}
+
+	public LinkedList<BoardCell> getAdjList(int row, int col) {
+		LinkedList<BoardCell> adjacents = new LinkedList<BoardCell>();
+		for (int i = -1; i < 2; i++)
+			for (int j = -1; j < 2; j++) {
+				if (Math.abs(i) != Math.abs(j)) {
+					if (col+j >= 0 && col+j < numColumns && row+i >= 0 && row+i < numRows)
+						adjacents.add(board[row+i][col+j]);
+				}					
+			}
+		return adjacents;
+	}
+
+	public Set<BoardCell> getTargets() {
+		return targets;
+	}
 }
