@@ -12,12 +12,21 @@ public class BoardCell {
 		this.column = col;
 		isDoor = false;
 	}
+	
+	public int getRow() {
+		return row;
+	}
+	
+	public int getColumn() {
+		return column;
+	}
+	
 	public boolean isWalkway() {
-		return true;
+		return (initial == 'W');
 	}
 	
 	public boolean isRoom() {
-		return true;
+		return (initial != 'W' && initial != 'X');
 	}
 	
 	public boolean isDoorway() {

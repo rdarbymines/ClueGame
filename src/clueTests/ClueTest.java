@@ -28,8 +28,8 @@ public class ClueTest {
 		assertEquals(11, rooms.size());
 		assertEquals("Conservatory", rooms.get('C'));
 		assertEquals("Ballroom", rooms.get('B'));
-		assertEquals("Billiard Room", rooms.get('R'));
-		assertEquals("Dining Room", rooms.get('D'));
+		assertEquals("Billiard room", rooms.get('R'));
+		assertEquals("Dining room", rooms.get('D'));
 		assertEquals("Walkway", rooms.get('W'));
 		assertEquals("Library", rooms.get('L'));
 		assertEquals("Kitchen", rooms.get('K'));
